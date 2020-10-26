@@ -1,1 +1,1 @@
-console.log("James");
+(()=>{let e=0;const t=document.querySelector("#figure");document.querySelectorAll(".btn").forEach((function(c){c.addEventListener("click",(function(c){const n=c.currentTarget.classList;n.contains("decrease")?e--:n.contains("increase")?e++:e=0,t.textContent=e,e>0&&(t.className="text-success"),e<0&&(t.className="text-danger"),0===e&&(t.className="text-dark")}))}))})();
