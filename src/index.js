@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import nav from './nav';
 
 const counter = (() => {
@@ -10,9 +12,9 @@ const counter = (() => {
     btn.addEventListener('click', (e) => {
       const styles = e.currentTarget.classList;
       if (styles.contains('decrease')) {
-        count--;
+        count -= 1;
       } else if (styles.contains('increase')) {
-        count++;
+        count += 1;
       } else {
         count = 0;
       }
