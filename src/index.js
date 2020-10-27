@@ -1,9 +1,13 @@
+import nav from './nav';
+
 const counter = (() => {
   let count = 0;
   const figure = document.querySelector('#figure');
-  const buttons = document.querySelectorAll('.btn');   
-  buttons.forEach(function (btn) {
-    btn.addEventListener('click', function (e) {
+  const buttons = document.querySelectorAll('.btn');
+  const main = document.querySelector('.main-content');
+  main.classList = 'text-center aligh-items-center mt-4 pt-4';
+  buttons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
       const styles = e.currentTarget.classList;
       if (styles.contains('decrease')) {
         count--;
